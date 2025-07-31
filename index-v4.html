@@ -953,5 +953,23 @@
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 
+	<script>
+jQuery(document).ready(function($) {
+    // Disable Vimeo API checks
+    if (typeof _R !== 'undefined') {
+        // Override the video API check function
+        _R.checkVideoApis = function() {
+            return { addedyt: 0, addedvim: 0, addedvid: 0 };
+        };
+        
+        // Remove any Vimeo video elements that might exist
+        $('.rs-background-video-layer[data-vimeoid]').remove();
+        
+        // Fake the Froogaloop API being loaded
+        window.Froogaloop = true;
+    }
+});
+</script>
+
 	</body>
 </html>
