@@ -692,6 +692,52 @@ h4 { font-size: 14px; line-height: 14px; }
     content: "\f00d";
 }
 
+.glass-effect {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); /* 👈 improves readability */
+}
+
+.glass-effect-sm {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);              /* 👈 Blur doubled */
+    -webkit-backdrop-filter: blur(16px);      /* 👈 For Safari support */
+    border-radius: 10px;
+    border: 1px solid rgba(185, 0, 0, 0.212);
+    padding: 14px 22px;
+    display: inline-block;
+
+    color: #ffffff;
+    text-shadow: 0 3px 10px rgba(35, 0, 65, 0.85);
+    font-weight: 400;
+}
+
+
+.glass-effect-lg {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px); /* 👈 Strong blur for hero heading */
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    padding: 30px 50px;
+    display: inline-block;
+
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
 
 /* Main Menu
 ---------------------------------------------------------------*/
